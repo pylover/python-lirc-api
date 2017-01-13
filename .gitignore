@@ -1,0 +1,7 @@
+.pylint-stamp
+api-docs
+dist
+doxygen.warnings
+lirc.egg-info
+build
+
