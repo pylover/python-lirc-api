@@ -6,6 +6,13 @@ pylint_template  = {path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
 
 py_source        = lirc/*.py
 
+all: copy
+
+copy: .phony
+	cp ../async_client.py lirc
+	cp ../client.py lirc
+	cp ../database.py lirc
+	cp ../config.py lirc
 
 pep8:   $(py_source)
 	python3-pep8 --config=./pep8.conf $?
